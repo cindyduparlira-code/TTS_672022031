@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi TTS - NIM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #84fab0, #8fd3f4);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .container {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin-top: 30px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      border: 2px solid #0077b6;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #023e8a;
+    }
+    .output {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #03045e;
+    }
+    footer {
+      margin-top: auto;
+      background-color: #0077b6;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>🌐 Aplikasi TTS (Text To Speech)</header>
+  <div class="container">
+    <h2>Masukkan Teks Anda</h2>
+    <input type="text" id="textInput" placeholder="Ketik teks di sini...">
+    <br>
+    <button onclick="speakText()">🔊 Ucapkan</button>
+    <button onclick="stopSpeech()">⏹ Hentikan</button>
+    <div class="output" id="outputText"></div>
+  </div>
+  <footer>Dibuat oleh: [Nama Anda] | NIM: [Isi NIM Anda]</footer>
+  <script src="script.js"></script>
+</body>
+</html>
